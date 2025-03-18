@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: -6160095767782489211}
   - component: {fileID: -3759092632136736677}
   m_Layer: 4
-  m_Name: PingPongPaddle
+  m_Name: PingPongPaddle 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 439aa1bf81e22c340a0aec0aaad29325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 1
+  playerNumber: 2
   controller: 2
   hapticStrength: 0.5
   hapticDuration: 0.1
@@ -420,7 +420,8 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: -6160095767782489211}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
