@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2833205685240550687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2833205685240550684}
+  m_Layer: 0
+  m_Name: PingPongGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2833205685240550684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2833205685240550687}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.019474655, y: 0.12447925, z: 0.07901856}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5166389894821543542}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2833205685554275470
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2833205685240550684}
+    m_Modifications:
+    - target: {fileID: 1642707072221351638, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+      propertyPath: m_Name
+      value: PingPongGameInitializer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4441769604541701303, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+      propertyPath: gameManagerPrefab
+      value: 
+      objectReference: {fileID: 8386132163055306487, guid: 02bf9b97d62c44f41a689e33ca0f6479, type: 3}
+    - target: {fileID: 4441769604541701303, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+      propertyPath: playerSetupPrefab
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981465301490932472, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981465301490932472, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.80916053
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981465301490932472, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3160498
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981465301490932472, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.20266509
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981465301490932472, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981465301490932472, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981465301490932472, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981465301490932472, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981465301490932472, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981465301490932472, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981465301490932472, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+--- !u!4 &5166389894821543542 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6981465301490932472, guid: 9f385918526ab154ebd21bafd332dbff, type: 3}
+  m_PrefabInstance: {fileID: 2833205685554275470}
+  m_PrefabAsset: {fileID: 0}
