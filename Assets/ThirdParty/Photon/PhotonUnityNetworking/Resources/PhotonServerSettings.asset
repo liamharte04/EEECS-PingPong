@@ -49,6 +49,15 @@ MonoBehaviour:
   - SendSessionStart
   - CheckForLocalAnchors
   - OnColocatedAck
+  - RPC_OnBallServed
+  - RPC_OnScore
+  - RPC_PlayHitEffect
+  - RPC_PlaySound
+  - RPC_SpawnHitEffect
+  - RPC_SyncBallPhysics
+  - RPC_SyncGameState
+  - RPC_UpdateGameStateText
+  - RPC_UpdateScore
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

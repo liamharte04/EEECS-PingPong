@@ -200,8 +200,10 @@ GameObject:
   - component: {fileID: 9026058631272519211}
   - component: {fileID: 5758669567195419189}
   - component: {fileID: 1020989747419590308}
-  - component: {fileID: -6160095767782489211}
   - component: {fileID: -3759092632136736677}
+  - component: {fileID: 4192493885536861651}
+  - component: {fileID: 6815966127303865909}
+  - component: {fileID: 8058615779579052055}
   m_Layer: 4
   m_Name: PingPongPaddle 1
   m_TagString: Untagged
@@ -373,35 +375,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-6160095767782489211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5744610901110011766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 439aa1bf81e22c340a0aec0aaad29325, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerNumber: 1
-  controller: 2
-  hapticStrength: 0.5
-  hapticDuration: 0.1
-  useHandTracking: 0
-  hand: {fileID: 0}
-  handSkeleton: {fileID: 0}
-  pinchThreshold: 0.7
-  paddleRenderer: {fileID: 0}
-  ownedMaterial: {fileID: 0}
-  otherMaterial: {fileID: 0}
-  handVisualization: {fileID: 0}
-  goodContactMaterial: {fileID: 0}
-  badContactMaterial: {fileID: 0}
-  hitEffect: {fileID: 0}
-  hitSound: {fileID: 0}
-  swingSound: {fileID: 0}
 --- !u!114 &-3759092632136736677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -421,10 +394,80 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: -6160095767782489211}
+  - {fileID: 4192493885536861651}
+  - {fileID: 8058615779579052055}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &4192493885536861651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5744610901110011766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1683710f620dd71438681f78ac415e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNumber: 1
+  controller: 2
+  hapticStrength: 0.5
+  hapticDuration: 0.1
+  useHandTracking: 0
+  hand: {fileID: 0}
+  handSkeleton: {fileID: 0}
+  pinchThreshold: 0.7
+  paddleRenderer: {fileID: 0}
+  ownedMaterial: {fileID: 0}
+  otherMaterial: {fileID: 0}
+  handVisualization: {fileID: 0}
+  goodContactMaterial: {fileID: 0}
+  badContactMaterial: {fileID: 0}
+  hitEffect: {fileID: 0}
+  hitSound: {fileID: 0}
+  swingSound: {fileID: 0}
+--- !u!114 &6815966127303865909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5744610901110011766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 1
+  OwnershipTransfer: 1
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 4192493885536861651}
+  - {fileID: 8058615779579052055}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &8058615779579052055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5744610901110011766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 1
+  m_UseLocal: 1
 --- !u!1 &8037361852070774721
 GameObject:
   m_ObjectHideFlags: 0

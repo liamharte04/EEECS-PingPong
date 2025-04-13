@@ -169,9 +169,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8194267628425338320}
-  - component: {fileID: 6300893880792417114}
   - component: {fileID: -8467826085264548183}
   - component: {fileID: 7649856643475821539}
+  - component: {fileID: 6135270756780536629}
+  - component: {fileID: 2573829814000097660}
   m_Layer: 0
   m_Name: Desk
   m_TagString: Table
@@ -197,25 +198,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &6300893880792417114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3382045101250376723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7517246ba58547b4ca4f98f6238c25b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tableTop: {fileID: 0}
-  net: {fileID: 0}
-  tableBoundaries: []
-  scoreZones: []
-  tableMaterial: {fileID: 2100000, guid: 302a19255d06a94499eef4521c7b5233, type: 2}
-  highlightMaterial: {fileID: 0}
-  tableHeight: 0.76
 --- !u!114 &-8467826085264548183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +211,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &7649856643475821539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3382045101250376723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cc380c4d9f5fd04090ed8050e2571d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AnchorName: {fileID: 0}
+  m_SaveIcon: {fileID: 0}
+  m_ShareButton: {fileID: 0}
+  m_ShareIcon: {fileID: 0}
+  m_AlignIcon: {fileID: 0}
+  m_SpatialAnchor: {fileID: -8467826085264548183}
+--- !u!114 &6135270756780536629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3382045101250376723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba590d4c6b638d48a33627571bc488f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tableTop: {fileID: 0}
+  net: {fileID: 0}
+  tableBoundaries: []
+  scoreZones: []
+  tableMaterial: {fileID: 0}
+  highlightMaterial: {fileID: 0}
+  tableHeight: 0.76
+--- !u!114 &2573829814000097660
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

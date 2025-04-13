@@ -326,12 +326,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2982998299359123673, guid: 60fa00281e83b294583adc31df520fbe, type: 3}
   m_PrefabInstance: {fileID: 2982998299393685461}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &522706992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 522706993}
+  m_Layer: 0
+  m_Name: TableSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &522706993
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522706992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &543581506 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1808790778080157670, guid: 4b32db7e3ea3cad46abd3aeada852f8b, type: 3}
   m_PrefabInstance: {fileID: 1808790778611120804}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1808790778611120805}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fd37886bf1897d43919385b4dc1c259, type: 3}
@@ -1579,6 +1610,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b32db7e3ea3cad46abd3aeada852f8b, type: 3}
+--- !u!1 &1808790778611120805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1808790778080157669, guid: 4b32db7e3ea3cad46abd3aeada852f8b, type: 3}
+  m_PrefabInstance: {fileID: 1808790778611120804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1808790778611120806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808790778611120805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfc39efe9552bdf49badb7dbe2316219, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManagerPrefab: {fileID: 0}
+  tablePrefab: {fileID: 3382045101250376723, guid: e62c880d5e383074a85167c9a655631a, type: 3}
+  tableSpawnPosition: {fileID: 522706993}
+  pingPongUI: {fileID: 0}
+  player1PaddlePrefab: {fileID: 5744610901110011766, guid: 8bc5a04aef6e3a14b9c916a790c8fea2, type: 3}
+  player2PaddlePrefab: {fileID: 5744610901110011766, guid: d4b63466b3bf64b42ba13d535d9017d9, type: 3}
+  ballPrefab: {fileID: 8475685743619179906, guid: 83c7f8a608b97f94b9a7b548e3331691, type: 3}
 --- !u!222 &2022449733152600184
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1724,9 +1779,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 543581506}
-        m_TargetAssemblyTypeName: PhotonAnchorManager, Assembly-CSharp
-        m_MethodName: OnCreateRoomButtonPressed
+      - m_Target: {fileID: 1808790778611120806}
+        m_TargetAssemblyTypeName: EnhancedRoomManager, Assembly-CSharp
+        m_MethodName: CreateRoomWithPingPong
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11500000, guid: bfc39efe9552bdf49badb7dbe2316219, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
